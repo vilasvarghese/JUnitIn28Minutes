@@ -22,34 +22,92 @@ Reference: Udemy course and it's forked repo.:
 
 ## Topics
 ### Section 1 Foundation
+- What is Unit Testing?
+- What is Regression Testing?
+- Automation Testing
+	- Process of testing the software through automated testcases written in software. 
+	- Multiple tools/Frameworks are generally used for automating the process and repeating the test cases. 
+	- Reduces human intervention 
+	- Increases the success rate of the tests.
+	- Improves efficiency of teams.
+
+	
 - What is JUnit?
+	- Java unit testing framework
+	- One of the best test methods for unit/regression testing.
+	- An open-source framework
+	- Used to 
+		- Write and run repeatable automated tests.
+		- CI/CD
+		- Trigger automated processes etc.
+
+	- Masters in writing the repeatable test cases.
+
 - Why Unit Testing?
 
 ### Section 2 First JUnit Example
 @Test Annotation
+	https://junit.org/junit4/javadoc/4.12/org/junit/Test.html
+	Converts a method into a test case.
+	Junit execution engine understands it as a test case and executes it.
+	Executes 
+		after the @Before code has been executed (if you have placed it).
+		
 - Running JUnit
 - No Failure = Success
 - Basic Assert methods
+	https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html
 
 ### Section 3 Second JUnit Example
 - assertTrue and assertFalse methods
+	- assertTrue: Asserts that the supplied condition is true.
+	- assertFalse: Asserts that the supplied condition is not true
 - @Before @After annotations
+	- @Before: Before annotation 
+		Execute before EVERY test in JUnit. 
+		Used to setup the infrastructure before the test executions. 
+		e.g. create some primary object before actual execution happens
+	- @After: After annotation
+		Executed after EVERY testcase is executed. 
+		Used to destroy/cleanup the variables/infrastructure and free up the memory.
+		
+	
+	
 - @BeforeClass @AfterClass annotations
+	- @BeforeClass: The BeforeClass annotation 
+		- Execcuted ONCE before running all the tests. 
+		- Must be static.
+	- @AfterClass: AfterClass annotation 
+		- Executed after ALL test cases in the class is executed.
+
 
 ### Section 4 JUnit Simple Test Scenarios
 - Comparing Arrays
+	- https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html
 - Testing Exceptions
-- Performance Unit Tests
+	- https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html
+	- assertThrows
+	- assertTimeout
+	- e.g.  Assertions.assertThrows(NumberFormatException.class, () -> {
+    			Integer.parseInt("One");
+  		});
 
 ### Section 5 JUnit Intermediate Test Scenarios 
 - Parameterized Tests
+  	- https://www.baeldung.com/parameterized-tests-junit-5 
 - Test Suites
-
+	Junit4 Test Suites: https://howtodoinjava.com/junit/how-to-execute-junit-testcases-in-test-suite/
+	Junit5 Test Suites: https://howtodoinjava.com/junit5/junit5-test-suites-examples/
 ### Section 6 JUnit Best Practices
 - Naming Test Methods
 - Highlight Important Values in Tests
 - Handle Exceptions Properly
 - Readable Assert Statements
+
+### Other details
+- @DisplayName
+	- Added in Junit5. @DisplayName("Provide a detailed desciption")  
+- s
 
 ### Starting Examples
 ```
@@ -86,30 +144,3 @@ public class StringHelper {
 
 ```
 
-
-## About in28Minutes
-- At in28Minutes, we ask ourselves one question everyday. How do we create more effective trainings?
-- We use Problem-Solution based Step-By-Step Hands-on Approach With Practical, Real World Application Examples. 
-- Our success on Udemy and Youtube (2 Million Views & 12K Subscribers) speaks volumes about the success of our approach.
-- While our primary expertise is on Development, Design & Architecture Java & Related Frameworks (Spring, Struts, Hibernate) we are expanding into the front-end world (Bootstrap, JQuery, Angular JS). 
-
-### Our Beliefs
-- Best Course are interactive and fun.
-- Foundations for building high quality applications are best laid down while learning.
-
-### Our Approach
-- Problem Solution based Step by Step Hands-on Learning
-- Practical, Real World Application Examples.
-- We use 80-20 Rule. We discuss 20% things used 80% of time in depth. We touch upon other things briefly equipping you with enough knowledge to find out more on your own. 
-- We will be developing a demo application in the course, which could be reused in your projects, saving hours of your effort.
-- All the code is available on Github, for most steps.
-
-## About in28Minutes
-
-At in28Minutes, we ask ourselves one question everyday
-> How do we create more amazing course experiences? 
-> We use 80-20 Rule. We discuss 20% things used 80% of time in depth.
-
-We are creating amazing learning experiences for learning Spring Boot with AWS, Azure, GCP, Docker, Kubernetes and Full Stack. 300,000 Learners rely on our expertise.  [Find out more.... ](https://github.com/in28minutes/learn#best-selling-courses)
-
-![in28MinutesLearningRoadmap-July2019.png](https://github.com/in28minutes/in28Minutes-Course-Roadmap/raw/master/in28MinutesLearningRoadmap-July2019.png)
