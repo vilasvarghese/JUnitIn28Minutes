@@ -1,6 +1,6 @@
 # JUnitIn28Minutes
 
-Git hub repository for the free Udemy course : 
+Reference: Udemy course and it's forked repo.: 
 [https://www.udemy.com/course/junit-tutorial-for-beginners-with-java-examples/](https://www.udemy.com/course/junit-tutorial-for-beginners-with-java-examples/)
 
 
