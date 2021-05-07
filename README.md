@@ -30,10 +30,12 @@ Git hub repository for the free Udemy course :
 - Running JUnit
 - No Failure = Success
 - Basic Assert methods
-
+	- https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html
 ### Section 3 Second JUnit Example
 - assertTrue and assertFalse methods
 - @Before @After annotations
+	- @Before: Initialization logic and infrastructure initialization
+	- @After: Destruction/clean up logic and infrastructure clean up
 - @BeforeClass @AfterClass annotations
 
 ### Section 4 JUnit Simple Test Scenarios
